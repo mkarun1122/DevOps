@@ -1,0 +1,12 @@
+
+Install Cypress 
+Create First Project 
+Rum Tests Locally 
+Run Cypress Test cases in doker 
+
+create project 
+npm init -y 
+npm install -g cypress 
+
+Run Cypress locally 
+Cypress run --borwsers chrome 

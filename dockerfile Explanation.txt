@@ -1,0 +1,17 @@
+# Use a slim version of the official Node.js image
+FROM node:slim
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the current directory contents into the container's working directory
+COPY . /app
+
+# Install the dependencies defined in package.json
+RUN npm install
+
+# Expose port 3000 (or whatever port your app is running on)
+EXPOSE 3000
+
+# Start the Node.js app
+CMD ["node", "index.js"]
